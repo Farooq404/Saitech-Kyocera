@@ -1,0 +1,126 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  color: theme("colors.ink");
+  background: theme("colors.white");
+}
+
+::selection {
+  background: theme("colors.accent.orange");
+  color: white;
+}
+
+/* Reveal defaults so content isn't flashed before GSAP hydrates */
+.reveal-item {
+  opacity: 0;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .reveal-item {
+    opacity: 1 !important;
+    transform: none !important;
+  }
+}
+
+.container-xl {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-family: var(--font-poppins), sans-serif;
+  font-weight: 600;
+  font-size: 0.78rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: theme("colors.accent.orange");
+}
+
+.eyebrow::before {
+  content: "";
+  width: 24px;
+  height: 2px;
+  background: theme("colors.accent.orange");
+  display: inline-block;
+}
+
+.btn-primary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  background: theme("colors.brand.blue");
+  color: white;
+  font-family: var(--font-poppins), sans-serif;
+  font-weight: 600;
+  font-size: 0.92rem;
+  padding: 13px 28px;
+  border-radius: 8px;
+  border: 1px solid theme("colors.brand.blue");
+  transition: all 0.25s ease;
+  white-space: nowrap;
+}
+
+.btn-primary:hover {
+  background: theme("colors.brand.blueDark");
+  border-color: theme("colors.brand.blueDark");
+  transform: translateY(-2px);
+  box-shadow: theme("boxShadow.cardHover");
+}
+
+.btn-accent {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  background: theme("colors.accent.orange");
+  color: white;
+  font-family: var(--font-poppins), sans-serif;
+  font-weight: 600;
+  font-size: 0.92rem;
+  padding: 13px 28px;
+  border-radius: 8px;
+  border: 1px solid theme("colors.accent.orange");
+  transition: all 0.25s ease;
+  white-space: nowrap;
+}
+
+.btn-accent:hover {
+  background: theme("colors.accent.orangeDark");
+  border-color: theme("colors.accent.orangeDark");
+  transform: translateY(-2px);
+  box-shadow: theme("boxShadow.cardHover");
+}
+
+.btn-outline-white {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  background: rgba(255, 255, 255, 0.08);
+  color: white;
+  font-family: var(--font-poppins), sans-serif;
+  font-weight: 600;
+  font-size: 0.92rem;
+  padding: 13px 28px;
+  border-radius: 8px;
+  border: 1.5px solid rgba(255, 255, 255, 0.55);
+  transition: all 0.25s ease;
+  white-space: nowrap;
+}
+
+.btn-outline-white:hover {
+  background: white;
+  color: theme("colors.brand.blueDark");
+}
