@@ -70,96 +70,20 @@ export function LogoMark({ className = "w-7 h-7" }: { className?: string }) {
 }
 
 export default function Logo({ variant = "light", className = "" }: LogoProps) {
-  const isDark = variant === "dark";
-  const blue = isDark ? "#FFFFFF" : "#0B2D63";
-
   return (
     <Link
       href="/"
-      className={`inline-flex items-center gap-0 group select-none transition-opacity hover:opacity-95 ${className}`}
-      aria-label="SaiTech Kyocera Services - Home"
+      className={`inline-flex items-center group select-none transition-opacity hover:opacity-90 ${className}`}
+      aria-label="SaiTech Systems and Services - Home"
     >
-      {/* SAiTECH brand wordmark — replicates the uploaded logo style */}
-      <div className="flex flex-col justify-center leading-none">
-        {/* SVG wordmark: S A i T E C H with green dot on i */}
-        <svg
-          viewBox="0 0 200 44"
-          height="36"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-          aria-hidden="true"
-          className="transition-transform duration-200 group-hover:scale-[1.03]"
-        >
-          {/* S */}
-          <text
-            x="0" y="36"
-            fontFamily="Poppins, sans-serif"
-            fontWeight="800"
-            fontSize="38"
-            fill={blue}
-            letterSpacing="-1"
-          >S</text>
-          {/* A */}
-          <text
-            x="26" y="36"
-            fontFamily="Poppins, sans-serif"
-            fontWeight="800"
-            fontSize="38"
-            fill={blue}
-            letterSpacing="-1"
-          >A</text>
-          {/* i stem (no dot — we draw it manually) */}
-          <text
-            x="56" y="36"
-            fontFamily="Poppins, sans-serif"
-            fontWeight="800"
-            fontSize="38"
-            fill="#3AAA35"
-            letterSpacing="-1"
-          >i</text>
-
-          {/* T */}
-          <text
-            x="71" y="36"
-            fontFamily="Poppins, sans-serif"
-            fontWeight="800"
-            fontSize="38"
-            fill={blue}
-            letterSpacing="-1"
-          >T</text>
-          {/* E */}
-          <text
-            x="97" y="36"
-            fontFamily="Poppins, sans-serif"
-            fontWeight="800"
-            fontSize="38"
-            fill={blue}
-            letterSpacing="-1"
-          >E</text>
-          {/* C */}
-          <text
-            x="122" y="36"
-            fontFamily="Poppins, sans-serif"
-            fontWeight="800"
-            fontSize="38"
-            fill={blue}
-            letterSpacing="-1"
-          >C</text>
-          {/* H */}
-          <text
-            x="150" y="36"
-            fontFamily="Poppins, sans-serif"
-            fontWeight="800"
-            fontSize="38"
-            fill={blue}
-            letterSpacing="-1"
-          >H</text>
-        </svg>
-
-        <span className="font-display font-semibold text-[10px] uppercase tracking-[0.22em] text-accent-green mt-0.5 leading-none pl-0.5">
-          Systems and Services
-        </span>
-      </div>
+      {/* eslint-disable-next-line @next/next/no-img-element */}
+      <img
+        src="/logo/saitech-logo.jpg"
+        alt="SAiTECH Systems and Services"
+        height={68}
+        className="h-[68px] w-auto object-contain"
+      />
     </Link>
   );
 }
+
