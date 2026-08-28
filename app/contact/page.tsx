@@ -3,7 +3,6 @@ import Link from "next/link";
 import { site } from "@/lib/siteData";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import AnnouncementBar from "@/components/AnnouncementBar";
 import WhatsAppFloat from "@/components/WhatsAppFloat";
 import ContactForm from "./ContactForm";
 import { IconPhone, IconMail, IconWhatsApp } from "@/components/Icons";
@@ -20,7 +19,6 @@ export default function ContactPage() {
 
   return (
     <>
-      <AnnouncementBar />
       <Header />
 
       <main className="bg-soft min-h-screen pb-20">
@@ -171,15 +169,15 @@ export default function ContactPage() {
                   <h4 className="font-display font-bold text-lg mb-2">Our Promise to You</h4>
                   <ul className="space-y-2.5 text-xs text-white/85">
                     <li className="flex items-center gap-2">
-                      <span className="w-1.5 h-1.5 rounded-full bg-accent-orange" />
+                      <span className="w-1.5 h-1.5 rounded-full bg-accent-green" />
                       <span>100% Genuine Kyocera machines and toner cartridges</span>
                     </li>
                     <li className="flex items-center gap-2">
-                      <span className="w-1.5 h-1.5 rounded-full bg-accent-orange" />
+                      <span className="w-1.5 h-1.5 rounded-full bg-accent-green" />
                       <span>Factory-trained technicians for prompt troubleshooting</span>
                     </li>
                     <li className="flex items-center gap-2">
-                      <span className="w-1.5 h-1.5 rounded-full bg-accent-orange" />
+                      <span className="w-1.5 h-1.5 rounded-full bg-accent-green" />
                       <span>Free on-site installation and demo across Kurnool</span>
                     </li>
                   </ul>

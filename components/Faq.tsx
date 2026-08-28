@@ -44,13 +44,13 @@ function FaqItem({
   return (
     <div
       className={`reveal-item rounded-xl2 border transition-colors overflow-hidden ${
-        isOpen ? "border-accent-orange" : "border-line"
+        isOpen ? "border-accent-green" : "border-line"
       }`}
     >
       <button
         onClick={handleToggle}
         className={`w-full flex items-center justify-between gap-4 text-left px-5 py-4 font-display font-semibold transition-colors ${
-          isOpen ? "bg-accent-orange text-white" : "bg-white text-ink"
+          isOpen ? "bg-accent-green text-white" : "bg-white text-ink"
         }`}
       >
         <span>{q}</span>

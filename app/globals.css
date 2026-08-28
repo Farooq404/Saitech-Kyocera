@@ -12,7 +12,7 @@ body {
 }
 
 ::selection {
-  background: theme("colors.accent.orange");
+  background: theme("colors.brand.blue");
   color: white;
 }
 
@@ -35,6 +35,7 @@ body {
   padding: 0 1.5rem;
 }
 
+/* Eyebrow — brand green accent */
 .eyebrow {
   display: inline-flex;
   align-items: center;
@@ -44,17 +45,18 @@ body {
   font-size: 0.78rem;
   letter-spacing: 0.14em;
   text-transform: uppercase;
-  color: theme("colors.accent.orange");
+  color: theme("colors.accent.greenDark");
 }
 
 .eyebrow::before {
   content: "";
   width: 24px;
   height: 2px;
-  background: theme("colors.accent.orange");
+  background: theme("colors.accent.green");
   display: inline-block;
 }
 
+/* PRIMARY button — solid brand blue */
 .btn-primary {
   display: inline-flex;
   align-items: center;
@@ -79,30 +81,55 @@ body {
   box-shadow: theme("boxShadow.cardHover");
 }
 
+/* ACCENT button — green (replaces orange entirely) */
 .btn-accent {
   display: inline-flex;
   align-items: center;
   justify-content: center;
   gap: 8px;
-  background: theme("colors.accent.orange");
+  background: theme("colors.accent.green");
   color: white;
   font-family: var(--font-poppins), sans-serif;
   font-weight: 600;
   font-size: 0.92rem;
   padding: 13px 28px;
   border-radius: 8px;
-  border: 1px solid theme("colors.accent.orange");
+  border: 1px solid theme("colors.accent.green");
   transition: all 0.25s ease;
   white-space: nowrap;
 }
 
 .btn-accent:hover {
-  background: theme("colors.accent.orangeDark");
-  border-color: theme("colors.accent.orangeDark");
+  background: theme("colors.accent.greenDark");
+  border-color: theme("colors.accent.greenDark");
   transform: translateY(-2px);
   box-shadow: theme("boxShadow.cardHover");
 }
 
+/* SECONDARY button — outlined blue */
+.btn-secondary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  background: transparent;
+  color: theme("colors.brand.blue");
+  font-family: var(--font-poppins), sans-serif;
+  font-weight: 600;
+  font-size: 0.92rem;
+  padding: 12px 28px;
+  border-radius: 8px;
+  border: 1.5px solid theme("colors.brand.blue");
+  transition: all 0.25s ease;
+  white-space: nowrap;
+}
+
+.btn-secondary:hover {
+  background: theme("colors.brand.blueLight");
+  transform: translateY(-2px);
+}
+
+/* OUTLINE WHITE button — for use on dark blue panels */
 .btn-outline-white {
   display: inline-flex;
   align-items: center;

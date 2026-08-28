@@ -4,9 +4,9 @@ import Link from "next/link";
 import { products, site } from "@/lib/siteData";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import AnnouncementBar from "@/components/AnnouncementBar";
 import WhatsAppFloat from "@/components/WhatsAppFloat";
 import { IconPhone, IconWhatsApp, IconArrowRight } from "@/components/Icons";
+import ProductImageZoom from "@/components/ProductImageZoom";
 
 interface Props {
   params: { slug: string };
@@ -46,7 +46,6 @@ export default function ProductDetailPage({ params }: Props) {
 
   return (
     <>
-      <AnnouncementBar />
       <Header />
 
       <main className="bg-soft min-h-screen pb-20">
@@ -72,19 +71,15 @@ export default function ProductDetailPage({ params }: Props) {
           <div className="container-xl">
             <div className="grid lg:grid-cols-12 gap-8 lg:gap-12 items-start">
               {/* Product Image Gallery Box */}
-              <div className="lg:col-span-5 bg-white rounded-xl2 border border-line p-8 shadow-card flex flex-col items-center justify-center relative sticky top-28">
+              <div className="lg:col-span-5 bg-white rounded-xl2 border border-line p-8 shadow-card flex flex-col items-center justify-center relative lg:sticky lg:top-28">
                 {product.badge && (
-                  <span className="absolute top-4 left-4 text-[11px] font-display font-bold uppercase tracking-wide bg-accent-orange text-white px-3 py-1 rounded-full shadow-sm">
+                  <span className="absolute top-4 left-4 text-[11px] font-display font-bold uppercase tracking-wide bg-accent-green text-white px-3 py-1 rounded-full shadow-sm">
                     {product.badge}
                   </span>
                 )}
                 <div className="w-full h-72 sm:h-84 flex items-center justify-center my-4">
                   {product.image ? (
-                    <img
-                      src={product.image}
-                      alt={product.name}
-                      className="max-h-full max-w-full object-contain mix-blend-multiply drop-shadow-md"
-                    />
+                    <ProductImageZoom src={product.image} alt={product.name} />
                   ) : (
                     <div className="grid place-items-center w-24 h-24 rounded-2xl bg-brand-blueLight text-brand-blue">
                       <svg className="w-12 h-12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.3">
@@ -183,19 +178,19 @@ export default function ProductDetailPage({ params }: Props) {
                   </p>
                   <div className="grid sm:grid-cols-2 gap-3 text-xs text-white/90">
                     <div className="flex items-center gap-2">
-                      <span className="w-1.5 h-1.5 rounded-full bg-accent-orange" />
+                      <span className="w-1.5 h-1.5 rounded-full bg-accent-green" />
                       <span>Free On-Site Installation &amp; Network Setup</span>
                     </div>
                     <div className="flex items-center gap-2">
-                      <span className="w-1.5 h-1.5 rounded-full bg-accent-orange" />
+                      <span className="w-1.5 h-1.5 rounded-full bg-accent-green" />
                       <span>Staff Operational Training &amp; Demo</span>
                     </div>
                     <div className="flex items-center gap-2">
-                      <span className="w-1.5 h-1.5 rounded-full bg-accent-orange" />
+                      <span className="w-1.5 h-1.5 rounded-full bg-accent-green" />
                       <span>Genuine Manufacturer Warranty Coverage</span>
                     </div>
                     <div className="flex items-center gap-2">
-                      <span className="w-1.5 h-1.5 rounded-full bg-accent-orange" />
+                      <span className="w-1.5 h-1.5 rounded-full bg-accent-green" />
                       <span>Priority Breakdown Support &amp; AMC Plans</span>
                     </div>
                   </div>

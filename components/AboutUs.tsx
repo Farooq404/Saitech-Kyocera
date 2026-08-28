@@ -44,7 +44,7 @@ export default function AboutUs() {
           {/* Text Content */}
           <div ref={headRef} className="lg:col-span-7 order-1 lg:order-2">
             <span className="about-reveal eyebrow mb-3">About Us</span>
-            <div className="about-reveal text-xs font-display font-bold uppercase tracking-wider text-accent-orange mb-2">
+            <div className="about-reveal text-xs font-display font-bold uppercase tracking-wider text-accent-green mb-2">
               {aboutInfo.category}
             </div>
             <h2 className="about-reveal font-display font-extrabold text-brand-blueDark text-2xl sm:text-3xl md:text-[2.2rem] leading-tight mb-4">

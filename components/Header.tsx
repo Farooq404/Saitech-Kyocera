@@ -5,11 +5,13 @@ import gsap from "gsap";
 import Logo from "./Logo";
 import { site, navLinks } from "@/lib/siteData";
 import { IconPhone, IconMail } from "./Icons";
+import { useScrollProgress } from "@/lib/gsapAnimations";
 
 export default function Header() {
   const [open, setOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const headerRef = useRef<HTMLElement>(null);
+  const progressRef = useScrollProgress<HTMLDivElement>();
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 12);
@@ -42,9 +44,6 @@ export default function Header() {
               {site.email}
             </a>
           </div>
-          <span className="uppercase tracking-widest font-semibold text-[11px] text-white/90">
-            Kyocera India <span className="text-accent-orange">Distributor&apos;s</span> &amp; Premium Partners
-          </span>
         </div>
       </div>
 
@@ -54,6 +53,8 @@ export default function Header() {
           scrolled ? "shadow-card" : ""
         }`}
       >
+        {/* Scroll progress bar */}
+        <div ref={progressRef} className="absolute left-0 -bottom-[2px] h-[2px] w-full bg-accent-green" />
         <div className="container-xl flex items-center justify-between py-3.5">
           {/* Logo */}
           <Logo variant="light" className="shrink-0" />

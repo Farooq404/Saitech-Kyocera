@@ -14,9 +14,10 @@ const config: Config = {
           blueLight: "#EAF1FC",
         },
         accent: {
-          orange: "#F5A623",
-          orangeDark: "#D9860C",
+          // Green pulled from the SaiTech logo's "A" mark
           green: "#3AAE49",
+          greenDark: "#2E8A3A",
+          greenLight: "#E7F6EA",
         },
         ink: "#1B2430",
         muted: "#6B7686",

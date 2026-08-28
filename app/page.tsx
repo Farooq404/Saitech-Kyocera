@@ -1,4 +1,3 @@
-import AnnouncementBar from "@/components/AnnouncementBar";
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import CategoryRow from "@/components/CategoryRow";
@@ -15,7 +14,6 @@ import WhatsAppFloat from "@/components/WhatsAppFloat";
 export default function Home() {
   return (
     <>
-      <AnnouncementBar />
       <Header />
       <main>
         <Hero />
