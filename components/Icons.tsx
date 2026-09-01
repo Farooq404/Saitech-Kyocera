@@ -94,6 +94,14 @@ export const categoryIcons: Record<string, JSX.Element> = {
       <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76Z" />
     </svg>
   ),
+  "copier-rental": (
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round">
+      <path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2" />
+      <rect x="6" y="14" width="12" height="8" />
+      <path d="M17 3a5 5 0 0 1 3.6 8.5M7 3a5 5 0 0 0-3.6 8.5" />
+      <path d="m19 1.5 1.6 2-2 1.2M5 1.5 3.4 3.5l2 1.2" />
+    </svg>
+  ),
 };
 
 export const trustIcons = [

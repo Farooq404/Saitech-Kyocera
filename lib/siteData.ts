@@ -25,6 +25,7 @@ export const categories = [
   { label: "Consumables", key: "consumables" },
   { label: "Spare Parts", key: "spare-parts" },
   { label: "AMC & Service", key: "amc" },
+  { label: "Copier Rental", key: "copier-rental" },
 ];
 
 export const trustBadges = [
@@ -40,7 +41,7 @@ export const trustBadges = [
   },
   {
     title: "Certified Technicians & Genuine Parts",
-    subtitle: "Authentic Toners, Spares & Factory-Trained Engineers",
+    subtitle: "Authentic Toners, Spares & Factory-Certified Engineers",
     badge: "100% Genuine",
   },
 ];

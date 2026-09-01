@@ -47,8 +47,8 @@ export default function AboutUs() {
             <div className="about-reveal text-xs font-display font-bold uppercase tracking-wider text-accent-green mb-2">
               {aboutInfo.category}
             </div>
-            <h2 className="about-reveal font-display font-extrabold text-brand-blueDark text-2xl sm:text-3xl md:text-[2.2rem] leading-tight mb-4">
-              Your Trusted Kyocera Partner in Kurnool
+            <h2 className="about-reveal font-display font-extrabold text-brand-blueDark text-2xl sm:text-3xl md:text-[2.2rem] leading-tight mb-4 mt-2">
+              Authorized Kyocera Partner in Kurnool
             </h2>
             <p className="about-reveal text-muted text-base leading-relaxed mb-6">
               {aboutInfo.description}

@@ -9,7 +9,7 @@ import { IconArrowRight } from "./Icons";
 const features = [
   "Genuine Kyocera hardware & consumables",
   "On-site installation & setup support",
-  "Certified, factory-trained technicians",
+  "Certified technicians with factory-certified training",
   "Flexible AMC & service plans",
 ];
 
